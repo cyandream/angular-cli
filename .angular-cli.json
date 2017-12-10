@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "angular-cli"
+    "name": "michelle-angular-cli"
   },
   "apps": [
     {
@@ -10,7 +10,17 @@
       "assets": [
         "assets",
         "favicon.ico",
-        "web.config"
+		"web.config",
+		{
+			"glob": "index.js",
+			"input": "./server/",
+			"output": "./"
+		  },
+		  {
+			"glob": "package.json",
+			"input": "./server/",
+			"output": "./"
+		  }
       ],
       "index": "index.html",
       "main": "main.ts",
